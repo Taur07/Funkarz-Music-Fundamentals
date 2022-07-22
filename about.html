@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+<!--
+    
+
+
+-->
+</head>
+<style>
+   
+   .logo {
+    margin: auto;
+    font-size: 20px;
+    background: white;
+    padding: 7px 11px;
+    border-radius: 50% 50%;
+    color: #000000b3;
+}
+.logo-type{
+	height: 50px;
+	width: 50px;
+	margin: right 100px;
+}
+.header-img{
+	width: 1370px;
+	height: 500px;
+}
+nav .nav-link{
+
+	color: #FFA500 !important;
+	font-size: 16px;
+}
+nav .nav-item{
+	width: auto !important
+}
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-nav {
+	    flex-direction: row;
+	}
+}
+    
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p{
+    color: black;
+}
+h1{
+    color: #FFA500;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #FFA500;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<body>
+  
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-dark" style="padding:0">
+  <div class="container">
+	    <a class="navbar-brand js-scroll-trigger text-white" href="./"><img class="logo-type" src="logo.jpg"></a>
+	    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+	    <div class="col-sm-6 pt-2">
+	    	<div class="input-group input-group-sm mb-3">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search"></i></span>
+			  </div>
+			  <input type="text" id="search" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+			</div>
+	    </div>
+	    <div class="collapse navbar-collapse" id="navbarResponsive">
+	        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+	            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=home">Home</a></li>
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+<!-- 				
+	            <!-- <?php if(isset($_SESSION['login_id'])): ?> -->
+	            <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=my_uploads">My Uploads</a></li> -->
+	            <li class=" dropdown nav-item">
+                	<!-- <a href="#" class="text-white dropdown-toggle nav-link"  id="account_settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo ucwords($_SESSION['login_firstname'].' '.$_SESSION['login_middlename']) ?> </a> -->
+	              <!-- <div class="dropdown-menu" aria-labelledby="account_settings" style="left: -2.5em;">
+	                <a class="dropdown-item" href="index.php?page=signup&id=<?php echo $_SESSION['login_id'] ?>" id=""><i class="fa fa-cog"></i> Manage Account</a>
+	                <a class="dropdown-item" href="ajax.php?action=logout"><i class="fa fa-power-off"></i> Logout</a> -->
+	              </div>
+	            </li>
+	          <!-- <?php else: ?>
+	            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:void(0)" id="login_now">Login</a></li>
+	          <?php endif; ?> -->
+	            -->
+	            
+	         
+	        </ul>
+	    </div>
+	</div>
+	
+</nav>
+<div class="row">
+	<img class="header-img" src="picture/slider-img.jpg">
+	</div>
+
+<script>
+  $('#login_now').click(function(){
+    uni_modal("LOGIN",'login.php')
+  })
+  $('#search').keypress(function(e){
+  	if(e.which == 13){
+  		location.href = "index.php?s="+$(this).val()
+  	}
+  })
+</script>
+    <div class="container">
+              <div class="row" style="margin: top 100px; margin-bottom: 70px;">
+                <div class="col-sm-12 col-md-6">
+                  <h1>About</h1>
+                  <p>
+                    Funkarz is an idea which facilitate the new talent with lots of good things in
+                    it. Basically, it gives a proper platform to the people to come up with a talent and by the
+                    ratings of the people. He will got the fame that he want. The new thing is ratings system by
+                    the people who goes on the app and they rate artists in count 0 to 10. After this we will check
+                    every month that which one is coming on top three positions. When we got those positions
+                    filled then we hired three of them in our studio. And we give them chance to record their
+                    vocal and we guide them in a proper way. Afterward we will give them chances to do
+                    concerts in different universities and make their name in the surroundings.
+                  </p> 
+                  
+                </div>
+      
+                
+      
+                <div class="col-xs-6 col-md-3">
+                    <video width="550" height="440" controls loop>
+                        <source src="Guitar-about.mp4" type="video/mp4">
+                        
+                        
+                      </video>
+                </div>
+                </div>
+             
+            
+      
+    </div>
+    <!-- Team of project-->
+    
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="picture/shah.jpg" alt="shah" style="width:100%">
+      <div class="container">
+        <h2>Shah Nawaz</h2>
+        <p class="title">Software Enginer</p>
+    
+        <p>shahnawaz@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="picture/shah1.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Ehtesham</h2>
+        <p class="title">Software Enginer</p>
+        
+        <p>Ehtesham@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Ahmad Tour</h2>
+        <p class="title">Singer</p>
+     
+        <p>ahmad@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      <!--  footer -->
+      <footer class="site-footer" style=" background-color: rgb(36, 31, 31);">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              
+              <p style="color: white; font-size: 14px;">
+                Funkarz is an idea which facilitate the new talent with lots of good things in
+                it. Basically, it gives a proper platform to the people to come up with a talent and by the
+                ratings of the people. 
+              </p> 
+              
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+             
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              
+              <ul class="footer-links" style="list-style: none; margin-top: 15px;">
+                <li><a style="color:#FFA500 ;" href="index.php?page=home">Home</a></li>
+                
+                <li><a style="color:#FFA500 ;" href="about.html">About Us</a></li>
+               
+               
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        
+        <div class="contanier">
+          <div class="socil_icon">
+            
+           
+         
+          </div>
+        </div>
+  
+  </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
